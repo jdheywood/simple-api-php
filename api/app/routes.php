@@ -25,3 +25,8 @@ Route::get('users', function()
 	return 'Users!';
 });
 
+Route::get('size/mobile', 'SizeController@mobile');
+
+Route::get('size/tablet', 'SizeController@tablet');
+
+Route::get('size/desktop', 'SizeController@desktop');
