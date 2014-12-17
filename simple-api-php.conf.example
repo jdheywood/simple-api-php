@@ -1,0 +1,11 @@
+<VirtualHost *:80>
+	ServerName sap
+	DocumentRoot /var/www/simple-api-php/api/public/
+	SetEnv DEV_ENVIRONMENT local
+	<Directory /var/www/simple-api-php/api/public>
+		DirectoryIndex index.php
+		AllowOverride All
+		Order allow,deny
+		Allow from all
+	</Directory>
+</VirtualHost>
